@@ -49,7 +49,6 @@ const Heading = styled.h1`
   color: white;
 `;
 const Container = ({heading}) => {
-    console.log(heading)
   let { page, query } = useParams();
   let path = useLocation().pathname.split("/");
   let history = useHistory();
@@ -57,13 +56,13 @@ const Container = ({heading}) => {
   const [loading, setLoading] = useState(false);
   let url = ``;
   if (path[1] === "popular") {
-    url = `https://anime-x.herokuapp.com/popular/${page}`;
+    url = `https://anime-x.vercel.app/api/popular/${page}`;
   } else if (path[1] === "search") {
-    url = `https://anime-x.herokuapp.com/search/${query}/${page}`;
+    url = `https://anime-x.vercel.app/api/search/${query}/${page}`;
   } else if (path[1] === "genre") {
-    url = `https://anime-x.herokuapp.com/genre/${query}/${page}`;
+    url = `https://anime-x.vercel.app/api/genre/${query}/${page}`;
   } else if (path[1] === "recentlyadded") {
-    url = `https://anime-x.herokuapp.com/recentlyadded/${page}`;
+    url = `https://anime-x.vercel.app/api/recentlyadded/${page}`;
   }
 
   const [list, setList] = useState([]);
