@@ -226,7 +226,7 @@ const Home = () => {
 
   useEffect(() => {
     countapi
-      .update("animex.ninja", "864a5feb-66ee-4c0d-97a6-2f76c1d7e6ad", 1)
+      .update("anime--x.herokuapp.com", "864a5feb-66ee-4c0d-97a6-2f76c1d7e6ad", 1)
       .then((result) => {
         setvist(result.value);
       });
