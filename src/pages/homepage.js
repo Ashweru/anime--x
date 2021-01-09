@@ -242,8 +242,7 @@ const Home = () => {
     <Loading />
   ) : (
     <Main>
-          <Heading>we are transfering this website soon to <a href="https://animex.ninja">animex.ninja</a> bookmark that site for better features</Heading>
-
+          
       <Heading>Genres</Heading>
       <Wrap>
         <Div>
