@@ -101,13 +101,13 @@ const Watch = () => {
         controls
       ></Video>
 
-      <Pagination>
-          <FaRegArrowAltCircleLeft
-              style={{ position: "relative", top: "5px" }}
-            />
+      <Pagination>  
         {ep === "1" ? null : (
           <PageB to={`/watch/${id}/${Number(ep) - 1}`}>
             Previous 
+<FaRegArrowAltCircleLeft
+              style={{ position: "relative", top: "5px" }}
+            />
           </PageB>
         )}
         <PageB to={`/watch/${id}/${Number(ep) + 1}`}>
