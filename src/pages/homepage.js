@@ -293,7 +293,6 @@ const Home = () => {
         </Synopsis>
       </Warning>
 
-      <h1 style={{ color: "white" }}>Visits:{vist}</h1>
       <Maindiv>
         <Git href="https://github.com/ashweru">
           <AiFillGithub
