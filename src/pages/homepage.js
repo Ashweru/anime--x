@@ -295,26 +295,12 @@ const Home = () => {
 
       <h1 style={{ color: "white" }}>Visits:{vist}</h1>
       <Maindiv>
-        <Git href="https://github.com/sohamsingh29">
+        <Git href="https://github.com/ashweru">
           <AiFillGithub
             style={{ position: "relative", top: "10px" }}
             size="2.5em"
           />
-          Soham Singh Yadav
-        </Git>
-        <Git href="https://github.com/routayush1">
-          <AiFillGithub
-            style={{ position: "relative", top: "10px" }}
-            size="2.5em"
-          />
-          Ayush Kumar Rout
-        </Git>
-        <Git href="https://github.com/gauravdh9">
-          <AiFillGithub
-            style={{ position: "relative", top: "10px" }}
-            size="2.5em"
-          />
-          Gaurav
+          Ashweru?
         </Git>
       </Maindiv>
     </Main>
