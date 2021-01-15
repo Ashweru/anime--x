@@ -226,7 +226,7 @@ const Home = () => {
 
   useEffect(() => {
     countapi
-      .update("animex.ninja", "864a5feb-66ee-4c0d-97a6-2f76c1d7e6ad", 1)
+      .update("anime--x.herokuapp.com", "864a5feb-66ee-4c0d-97a6-2f76c1d7e6ad", 1)
       .then((result) => {
         setvist(result.value);
       });
@@ -242,6 +242,7 @@ const Home = () => {
     <Loading />
   ) : (
     <Main>
+          
       <Heading>Genres</Heading>
       <Wrap>
         <Div>
@@ -255,65 +256,14 @@ const Home = () => {
         </Div>
       </Wrap>
 
-      <Warning>
-        <Img src={process.env.PUBLIC_URL + "/brave.png"} alt="" />
-        <Synopsis>
-          <Heading>Brave Browser</Heading>
-          <Summary>
-            <div
-              style={{
-                backdropFilter: "blur(6px)",
-                color: "white",
-                display: "inline-block",
-                height: "100%",
-                width: "100%",
-                padding: "5%",
-              }}
-            >
-              <H2>Disrupting Ad's While Enterntainment</H2>
-              <P>
-                A lot of ad may occur while streaming so to overcome this issue
-                you should install this super ad blocker and safe browser that
-                restricts ad's while binge watching your favorite anime
-              </P>
-            </div>
-          </Summary>
-          <Genre>
-            <A href="https://brave.com/download/">Windows</A>
-            <A href="https://brave.com/download/">MacOS</A>
-            <A href="https://brave.com/linux/">Linux</A>
-            <A href="https://play.google.com/store/apps/details?id=com.brave.browser&hl=en">
-              Android
-            </A>
-            <A href="https://apps.apple.com/us/app/brave-private-web-browser/id1052879175?mt=8&ign-mpt=uo%3D4">
-              iOS
-            </A>
-          </Genre>
-        </Synopsis>
-      </Warning>
 
-      <h1 style={{ color: "white" }}>Visits:{vist}</h1>
       <Maindiv>
-        <Git href="https://github.com/sohamsingh29">
+        <Git href="https://github.com/ashweru">
           <AiFillGithub
             style={{ position: "relative", top: "10px" }}
             size="2.5em"
           />
-          Soham Singh Yadav
-        </Git>
-        <Git href="https://github.com/routayush1">
-          <AiFillGithub
-            style={{ position: "relative", top: "10px" }}
-            size="2.5em"
-          />
-          Ayush Kumar Rout
-        </Git>
-        <Git href="https://github.com/gauravdh9">
-          <AiFillGithub
-            style={{ position: "relative", top: "10px" }}
-            size="2.5em"
-          />
-          Gaurav
+          Ashweru?
         </Git>
       </Maindiv>
     </Main>
