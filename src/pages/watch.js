@@ -75,7 +75,7 @@ const Watch = () => {
           if (data.links.length === 0) {
             setUrl(data.link);
           } else {
-            setUrl(data.links[0]);
+            setUrl(data.links[0].link);
           }
           setLoading(false);
         } else {
@@ -101,11 +101,11 @@ const Watch = () => {
         controls
       ></Video>
 
-      <Pagination>  
+      <Pagination>
         {ep === "1" ? null : (
           <PageB to={`/watch/${id}/${Number(ep) - 1}`}>
-            Previous 
-<FaRegArrowAltCircleLeft
+            Previous
+            <FaRegArrowAltCircleLeft
               style={{ position: "relative", top: "5px" }}
             />
           </PageB>
