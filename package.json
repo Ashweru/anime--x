@@ -22,7 +22,7 @@
     "react-spinners": "^0.8.3",
     "serve": "^11.3.2",
     "styled-components": "^5.1.0",
-    "swiper": "^5.3.8"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "dev": "react-scripts start",
